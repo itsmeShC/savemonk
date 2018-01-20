@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grab</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+      .contain{
+        position: relative;
+        top: 20px;
+      }
+
+      .row-fluid{
+        margin-top: 8px;
+      }
+
+      .col-xs-4{
+        padding: 4px;
+      }
+
+      .wrap{
+        padding: 15px;
+        height: 80px;
+        border:1px solid #e2e2e2;
+        border-radius: 6px;
+        box-shadow: 0px 2px #e2e2e2;
+      }
+
+      .wrap img{
+        height: 100%;
+        width: 100%;
+      }
+
+      .left{
+        position: relative;left: 5px;margin:0 auto;
+      }
+
+      span.left{
+        font-size: 16px;
+      }
+
+      .right{
+        position: relative;
+        float: right;
+        right: 10px;
+      }
+
+    </style>
+</head>
+<body>
+  <div ng-app="myApp" ng-controller="myCtrl">
+    <div class="container-fluid">
+      <div class="contain">
+        <span class="left">Popular Stores</span>
+        <span class="right"><a href="#">View All</a></span>
+        <div class="row-fluid">        
+          <div class="col-xs-4">
+            <div class="wrap">
+              <a href="#"><img src="images/paytm.png"></a>
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="wrap">
+              <a href="#"><img src="images/jabong.png"></a>
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="wrap">
+              <a href="#"><img src="images/flipkart.png"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
